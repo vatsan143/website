@@ -1,0 +1,80 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iron Pulse Gym</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background-image: url('1111.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- NAVIGATION BAR -->
+  <nav class="bg-gray-800 p-4 shadow-md fixed w-full z-20">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-yellow-400 font-bold text-2xl">Iron Pulse</a>
+      <ul class="flex space-x-6 text-white">
+        <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="people.html" class="hover:text-yellow-400">Our People</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-400">Contact</a></li>
+        <li><a href="signup.html" class="hover:text-yellow-400">Sign Up</a></li>
+        <li><a href="product.html" class="hover:text-yellow-400">Products</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero h-screen flex items-center justify-center relative pt-20">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="glass z-10 text-center p-10 rounded-xl max-w-2xl">
+      <h1 class="text-5xl font-extrabold mb-4">Iron Pulse Gym</h1>
+      <p class="text-xl mb-6">Where Strength Meets Dedication</p>
+      <a href="signup.html" class="bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-yellow-500 transition">Join the Revolution</a>    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="py-16 px-6 text-center bg-gray-800">
+    <h2 class="text-4xl font-bold mb-4">Our Core Benefits</h2>
+    <p class="text-gray-300 mb-10 max-w-2xl mx-auto">Unleash your potential with elite coaching, immersive workout zones, and 24/7 access to the best gear available.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
+        <h3 class="text-2xl font-semibold mb-2">Pro Equipment</h3>
+        <p>Top-tier machines & free weights for all training levels.</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
+        <h3 class="text-2xl font-semibold mb-2">Elite Trainers</h3>
+        <p>Certified professionals focused on your transformation.</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
+        <h3 class="text-2xl font-semibold mb-2">Dynamic Classes</h3>
+        <p>HIIT, yoga, strength & more with high energy atmosphere.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section id="join" class="py-20 bg-gradient-to-r from-yellow-400 to-yellow-500 text-center text-gray-900">
+    <h2 class="text-4xl font-extrabold mb-4">Start Your Fitness Journey Today</h2>
+    <p class="text-lg mb-8">No contracts. No excuses. Just results.</p>
+    <a href="signup.html" class="bg-gray-900 text-yellow-400 px-8 py-3 font-bold rounded-full hover:bg-gray-800 transition">Sign Up Now</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 bg-gray-900 text-center text-gray-400">
+    © 2025 Iron Pulse Gym. All rights reserved.
+  </footer>
+
+</body>
+</html>
