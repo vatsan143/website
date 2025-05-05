@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu - Iron Flame</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .menu-hero {
+      background-image: url('hero.jpg'); /* Same roasted food image */
+      background-size: cover;
+      background-position: center;
+    }
+    .glass {
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(6px);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-serif">
+
+  <!-- NAVBAR -->
+  <nav class="bg-gray-800 p-4 shadow-md fixed w-full z-20">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-red-500 font-bold text-2xl">Iron Flame</a>
+      <ul class="flex space-x-6 text-white">
+        <li><a href="index.html" class="hover:text-red-400">Home</a></li>
+        <li><a href="menu.html" class="hover:text-red-400 text-red-400">Menu</a></li>
+        <li><a href="about.html" class="hover:text-red-400">Our Story</a></li>
+        <li><a href="contact.html" class="hover:text-red-400">Contact</a></li>
+        <li><a href="reserve.html" class="hover:text-red-400">Reservations</a></li>
+        <li><a href="people.html" class="hover:text-red-400">Our Team</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MENU HERO -->
+  <section class="menu-hero h-96 flex items-center justify-center relative pt-20">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="glass z-10 text-center p-10 rounded-xl max-w-2xl">
+      <h1 class="text-5xl font-extrabold text-red-400">Our Menu</h1>
+      <p class="text-xl text-gray-200 mt-4">Crafted by flame. Served with heart.</p>
+    </div>
+  </section>
+
+  <!-- MENU GRID -->
+  <section class="py-16 px-6 bg-gray-900">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center text-yellow-400 mb-12">Signature Dishes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+        <!-- Dish 1 -->
+        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+          <img src="citrus-greek-chicken-easy-healthy-dinner-recipe-14.jpg" alt="Smoked Chicken" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-red-400 mb-2">Smoked Citrus Chicken</h3>
+            <p class="text-gray-300">Juicy whole roast infused with herbs, blood oranges & fire-roasted flavor.</p>
+            <p class="text-yellow-400 mt-3 font-bold">$18.99</p>
+          </div>
+        </div>
+
+        <!-- Dish 2 -->
+        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+          <img src="Easy-Grilled-VegetablesIMG_0768.jpg" alt="Veggies" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-red-400 mb-2">Grilled Garlic Veggies</h3>
+            <p class="text-gray-300">Seasonal vegetables flame-kissed with garlic butter and balsamic drizzle.</p>
+            <p class="text-yellow-400 mt-3 font-bold">$12.50</p>
+          </div>
+        </div>
+
+        <!-- Dish 3 -->
+        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+          <img src="Grilled-lemon-Herb-Chicken-17.jpg" alt="Lemon Infusion" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-red-400 mb-2">Lemon Herb Infusion</h3>
+            <p class="text-gray-300">Succulent grilled fillet glazed in lemon-thyme reduction.</p>
+            <p class="text-yellow-400 mt-3 font-bold">$16.00</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 bg-gray-900 text-center text-gray-400">
+    © 2025 Iron Flame Restaurant. All rights reserved.
+  </footer>
+
+</body>
+</html>
