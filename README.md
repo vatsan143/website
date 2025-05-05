@@ -336,97 +336,63 @@ Publish the website in the given URL.
 ### PEOPLE.HTML
 
 ```
+
+
+<!-- people.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Menu - Iron Flame</title>
+  <title>Our Team - Iron Flame</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    .menu-hero {
-      background-image: url('hero.jpg'); /* Same roasted food image */
-      background-size: cover;
-      background-position: center;
-    }
-    .glass {
-      background: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(6px);
-    }
-  </style>
 </head>
 <body class="bg-gray-900 text-white font-serif">
-
-  <!-- NAVBAR -->
   <nav class="bg-gray-800 p-4 shadow-md fixed w-full z-20">
     <div class="container mx-auto flex justify-between items-center">
       <a href="index.html" class="text-red-500 font-bold text-2xl">Iron Flame</a>
       <ul class="flex space-x-6 text-white">
         <li><a href="index.html" class="hover:text-red-400">Home</a></li>
-        <li><a href="menu.html" class="hover:text-red-400 text-red-400">Menu</a></li>
+        <li><a href="menu.html" class="hover:text-red-400">Menu</a></li>
         <li><a href="about.html" class="hover:text-red-400">Our Story</a></li>
         <li><a href="contact.html" class="hover:text-red-400">Contact</a></li>
         <li><a href="reserve.html" class="hover:text-red-400">Reservations</a></li>
-        <li><a href="people.html" class="hover:text-red-400">Our Team</a></li>
-
+        <li><a href="people.html" class="text-red-400">Our Team</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- MENU HERO -->
-  <section class="menu-hero h-96 flex items-center justify-center relative pt-20">
-    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-    <div class="glass z-10 text-center p-10 rounded-xl max-w-2xl">
-      <h1 class="text-5xl font-extrabold text-red-400">Our Menu</h1>
-      <p class="text-xl text-gray-200 mt-4">Crafted by flame. Served with heart.</p>
-    </div>
-  </section>
+  <section class="pt-32 px-6 max-w-4xl mx-auto">
+    <h1 class="text-5xl font-extrabold text-yellow-400 mb-6">Meet the Team</h1>
+    <p class="text-gray-300 leading-relaxed mb-4">
+      At Iron Flame, our team is at the heart of everything we do. From the passionate chefs who bring bold flavors to life, to the front-of-house staff who ensure your dining experience is unforgettable, we pride ourselves on creating a family-like atmosphere where everyone plays a crucial role.
+    </p>
 
-  <!-- MENU GRID -->
-  <section class="py-16 px-6 bg-gray-900">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-4xl font-bold text-center text-yellow-400 mb-12">Signature Dishes</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-
-        <!-- Dish 1 -->
-        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-          <img src="citrus-greek-chicken-easy-healthy-dinner-recipe-14.jpg" alt="Smoked Chicken" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold text-red-400 mb-2">Smoked Citrus Chicken</h3>
-            <p class="text-gray-300">Juicy whole roast infused with herbs, blood oranges & fire-roasted flavor.</p>
-            <p class="text-yellow-400 mt-3 font-bold">$18.99</p>
-          </div>
-        </div>
-
-        <!-- Dish 2 -->
-        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-          <img src="Easy-Grilled-VegetablesIMG_0768.jpg" alt="Veggies" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold text-red-400 mb-2">Grilled Garlic Veggies</h3>
-            <p class="text-gray-300">Seasonal vegetables flame-kissed with garlic butter and balsamic drizzle.</p>
-            <p class="text-yellow-400 mt-3 font-bold">$12.50</p>
-          </div>
-        </div>
-
-        <!-- Dish 3 -->
-        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-          <img src="Grilled-lemon-Herb-Chicken-17.jpg" alt="Lemon Infusion" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold text-red-400 mb-2">Lemon Herb Infusion</h3>
-            <p class="text-gray-300">Succulent grilled fillet glazed in lemon-thyme reduction.</p>
-            <p class="text-yellow-400 mt-3 font-bold">$16.00</p>
-          </div>
-        </div>
-
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="text-center">
+        <img src="vatsan.jpeg" alt="Chef 1" class="w-32 h-32 mx-auto rounded-full mb-4">
+        <h3 class="text-xl font-semibold text-yellow-400">VATSAN</h3>
+        <p class="text-gray-300">Executive Chef</p>
+        <p class="text-gray-400">A culinary mastermind, vatsan is the creator of Iron Flame's signature dishes, blending traditional flavors with contemporary flair.</p>
+      </div>
+      <div class="text-center">
+        <img src="bau.jpg" alt="Chef 2" class="w-32 h-32 mx-auto rounded-full mb-4">
+        <h3 class="text-xl font-semibold text-yellow-400">BAUDHI</h3>
+        <p class="text-gray-300">Sous Chef</p>
+        <p class="text-gray-400">baudhi brings innovation to the kitchen, constantly experimenting with new techniques and ingredients to elevate the dining experience.</p>
+      </div>
+      <div class="text-center">
+        <img src="bhuvan.jpg" alt="Manager 1" class="w-32 h-32 mx-auto rounded-full mb-4">
+        <h3 class="text-xl font-semibold text-yellow-400">BHUVANESH</h3>
+        <p class="text-gray-300">Restaurant Manager</p>
+        <p class="text-gray-400">bhuvanesh ensures that every guest feels like family, overseeing the smooth operation of the restaurant and ensuring top-notch service.</p>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="py-6 bg-gray-900 text-center text-gray-400">
+  <footer class="py-6 mt-12 bg-gray-900 text-center text-gray-400">
     © 2025 Iron Flame Restaurant. All rights reserved.
   </footer>
-
 </body>
 </html>
 
@@ -616,8 +582,7 @@ footer {
 ![alt text](<Screenshot 2025-05-05 232524.png>)
 ![alt text](<Screenshot 2025-05-05 232542.png>)
 ![alt text](<Screenshot 2025-05-05 232601.png>)
-![alt text](<Screenshot 2025-05-05 232624.png>)
-
+![alt text](<Screenshot 2025-05-05 235923.png>)
 
 # RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
